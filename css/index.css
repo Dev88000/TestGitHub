@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Courgette";
+  src: url("../fonts/Courgette.woff") format("woff"), url("../fonts/Courgette.woff2") format("woff2"), url("../fonts/Courgette.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Signika";
+  src: url("../fonts/Signika.woff") format("woff"), url("../fonts/Signika.woff2") format("woff2"), url("../fonts/Signika.ttf") format("truetype");
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  max-width: 100%;
+}/*# sourceMappingURL=index.css.map */
