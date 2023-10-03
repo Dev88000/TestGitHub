@@ -6,8 +6,20 @@ body {
     text-align: center;
 }
 main {
-    max-width: 100%;
+    max-width: 90%;
+    @extend %MarginLR;
 }
 a {
     @extend %NoneLien;
+}
+
+label {
+    font: bold 1.8rem "Signika", serif;
+    margin-right: 1rem
+}
+
+#formulaire {
+    @extend %flex;
+    flex-direction: column;
+    
 }
