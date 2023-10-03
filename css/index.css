@@ -6,6 +6,17 @@
   font-family: "Signika";
   src: url("../fonts/Signika.woff") format("woff"), url("../fonts/Signika.woff2") format("woff2"), url("../fonts/Signika.ttf") format("truetype");
 }
+#formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,5 +31,14 @@ body {
 }
 
 main {
-  max-width: 100%;
+  max-width: 90%;
+}
+
+label {
+  font: bold 1.8rem "Signika", serif;
+  margin-right: 1rem;
+}
+
+#formulaire {
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */
