@@ -6,9 +6,20 @@
   font-family: "Signika";
   src: url("../fonts/Signika.woff") format("woff"), url("../fonts/Signika.woff2") format("woff2"), url("../fonts/Signika.ttf") format("truetype");
 }
+.flex-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   margin-left: auto;
   margin-right: auto;
+}
+
+.name {
+  font: 900 2rem "Signika", serif;
+  color: #ffffff;
 }
 
 a {
@@ -17,13 +28,65 @@ a {
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   margin: 0;
-  text-align: center;
+  background-image: linear-gradient(10deg, #586071, #000000);
+  background-repeat: no-repeat;
 }
 
 main {
   max-width: 90%;
+  text-align: center;
+}
+
+a {
+  border: 0.2rem solid #000000;
+  background-color: #fcbd43;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font: 900 1.5rem sans-serif;
+}
+
+.flex-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.name {
+  margin-left: 5rem;
+  position: relative;
+  animation: nameMove 5s infinite;
+}
+
+@keyframes nameMove {
+  0% {
+    left: 0px;
+    color: rgb(0, 51, 255);
+  }
+  30% {
+    left: 50px;
+    color: rgb(0, 51, 255);
+  }
+  50% {
+    left: 50px;
+    color: #ffffff;
+  }
+  60% {
+    left: 50px;
+    color: #ffffff;
+  }
+  100% {
+    left: 0px;
+    color: rgb(255, 1, 1);
+  }
+}
+.web {
+  font: 900 2rem sans-serif;
+  color: #ffffff;
+  width: 50%;
 }/*# sourceMappingURL=index.css.map */
