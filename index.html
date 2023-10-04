@@ -18,12 +18,48 @@
     </header>
     <main>
         <section>
-            <h1>Formulaire</h1>
+            <h1>Inscription</h1>
             <form id="formulaire" method="POST" action="">
-                <label for="nom">Nom </label>
-                <input type="text" name="nom" id="nom" placeholder="Votre nom">
-                <label for="email">Email </label>
-                <input type="email" name="email" id="email" placeholder="Votre email">
+                <div>
+                    <label for="prenom">Prénom : </label>
+                    <input autofocus type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+                </div>
+                <div>
+                    <label for="prenom">Nom : </label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom">
+                </div>
+                <div>
+                    <label for="prenom">Mot de passe : </label>
+                    <input type="password" name="mdp" id="mdp">
+                </div>
+                <div>
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" id="email" placeholder="Votre email">
+                </div>
+                <label for="bio">Biographie du compte : </label>
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+                <div>
+                    <input type="checkbox" checked name="com" id="com" value="">
+                    <label for="com">Recevoir nos communications :</label>
+                </div>
+                <div>
+                    
+                    <input type="radio" name="sexe" id="sexeh" value="Homme">
+                    <label for="sexeh">Homme</label>
+                    <input type="radio" name="sexe" id="sexef" value="Femme">
+                    <label for="sexef">Femme</label>
+                </div>
+                <div>
+                    <label for="pays">Pays : </label>
+                    <select name="pays" id="">
+                        <option value="">Choisir votre pays</option>
+                        <option value="France">France</option>
+                        <option value="Espagne">Espagne</option>
+                        <option value="Allemagne">Allemagne</option>
+                        <option value="Italie">Italie</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
                 <input type="button" value="Envoyer">
             </form>
         </section>
