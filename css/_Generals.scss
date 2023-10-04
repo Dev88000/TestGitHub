@@ -1,14 +1,53 @@
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 body {
     margin: 0;
-    text-align: center;
+    background-image: linear-gradient(10deg, $couleur-Palette1, $couleur-Palette11);
+    background-repeat: no-repeat;
 }
+
 main {
     max-width: 90%;
     @extend %MarginLR;
+    text-align: center;
 }
+
 a {
     @extend %NoneLien;
+    border: 0.2rem solid $couleur-Palette11;
+    background-color: $couleur-Palette9;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    font: 900 1.5rem sans-serif;
+}
+
+.flex-header {
+    @extend %flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.name {
+    @extend %Font1-S;
+    margin-left: 5rem;
+    position: relative;
+    animation: nameMove 5s infinite;
+}
+
+@keyframes nameMove {
+    0% {left: 0px;color: rgb(0, 51, 255);}
+    30%  {left:50px;color: rgb(0, 51, 255);}
+    50%  {left:50px;color: #ffffff;}
+    60%  {left:50px;color: #ffffff;}
+    100% {left:0px;color: rgb(255, 1, 1);}
+}
+
+.web {
+    font: 900 2rem sans-serif;
+    color: $couleur-Palette4;
+    width: 50%;
 }
