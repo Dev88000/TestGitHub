@@ -41,4 +41,17 @@ label {
 
 #formulaire {
   flex-direction: column;
+}
+
+h1 {
+  font: 900 3rem "Courgette", cursive;
+}
+
+div {
+  padding: 1.5rem;
+}
+
+input, label, select {
+  font-size: 2rem;
+  font-family: "Courgette", cursive;
 }/*# sourceMappingURL=index.css.map */
