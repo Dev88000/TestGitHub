@@ -12,23 +12,3 @@ main {
 a {
     @extend %NoneLien;
 }
-
-label {
-    font: bold 1.8rem "Signika", serif;
-    margin-right: 1rem
-}
-
-#formulaire {
-    @extend %flex;
-    flex-direction: column;  
-}
-h1 {
-    font: 900 3rem "Courgette", cursive;
-}
-div {
-    padding: 1.5rem;
-}
-input, label, select {
-    font-size: 2rem;
-    font-family: "Courgette", cursive;
-}
