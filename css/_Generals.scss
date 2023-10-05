@@ -1,95 +1,102 @@
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//
 html {
     font-size: 62.5%;
-    height: 100%;
-    scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;}
 body {
-    margin: 0;
-    background-image: linear-gradient(10deg, $couleur-Palette1, $couleur-Palette11);
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-}
-
+    margin: 0;}
 main {
     max-width: 90%;
-    @extend %MarginLR;
-    text-align: center;
-    flex-grow: 1;
-}
-
-a {
+    flex-grow: 1;}    
+.AP {
     @extend %NoneLien;
     border: 0.2rem solid $couleur-Palette11;
     background-color: $couleur-Palette9;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     margin: 1rem;
-    font: 900 1.5rem sans-serif;
-}
-
+    font: 900 1.5rem sans-serif;}
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//    
 .flex-header {
     @extend %flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-}
-
+    padding: 2rem;}
+.degrade {
+    min-height: 100vh;
+    background: linear-gradient(10deg, $couleur-Palette1, $couleur-Palette11);}
+.CV {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;}
+.P-CV {
+    font: 700 1rem sans-serif;}
+.ecofleur {
+    width: 100%;}
+.eco {
+    position: absolute;
+    left: 0;
+    bottom: 0;}
+.spacer {
+    width: 100%;
+    margin-left: 35rem;}
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//
+.section {
+    width: 50%;
+    margin-top: 25rem;}
+section {
+   @extend %flex;
+   justify-content: space-evenly;
+   font: 900 2rem sans-serif;
+   color: $couleur-Palette4;}
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//
 .name {
     @extend %Font1-S;
     margin-left: 5rem;
     position: relative;
-    animation: nameMove 5s infinite;
-}
+    animation: nameMove 5s infinite linear;}
 @keyframes nameMove {
-    0% {left: 0px;color: $couleur-Palette13;}
-    30%  {left:50px;color: $couleur-Palette13;}
-    50%  {left:50px;color: $couleur-Palette4;}
-    70%  {left:50px;color: $couleur-Palette4;}
-    100% {left:0px;color: $couleur-Palette10;}
-}
-
-.section {
-    width: 50%;
-    margin-top: 25rem;
-}
-
-section {
-    @extend %flex;
-    justify-content: space-evenly;
-    font: 900 2rem sans-serif;
-    color: $couleur-Palette4;
-}
-
+    0% {left: 0px; color: $couleur-Palette13;}
+    30% {left: 50px; color: $couleur-Palette13;}
+    50% {left: 50px; color: $couleur-Palette4;}
+    70% {left: 50px; color: $couleur-Palette4;}
+    100% {left: 0px; color: $couleur-Palette10;}}
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//
 .eco {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 25rem;
-    animation: ecoMove 5s infinite;    
-}
-
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 25rem;
+  animation: ecoMove 5s infinite;}
 @keyframes ecoMove {
-    0% {transform-origin: left bottom; rotate: 0deg;}
-    10% {transform-origin: left bottom; rotate: 0.080deg;}
-    20% {transform-origin: left bottom; rotate: 0.080deg;}
-    30% {transform-origin: left bottom; rotate: 0.100deg;}
-    40% {transform-origin: left bottom; rotate: 0.150deg;}
-    50% {transform-origin: left bottom; rotate: 0.250deg;}
-    60% {transform-origin: left bottom; rotate: 0.150deg;}
-    70% {transform-origin: left bottom; rotate: 0.100deg;}
-    80% {transform-origin: left bottom; rotate: 0.080deg;}
-    90% {transform-origin: left bottom; rotate: 0.080deg;}
-    100% {transform-origin: left bottom; rotate: 0deg;}
-}
-
+  0% {transform-origin: left bottom; rotate: 0deg;}
+  10% {transform-origin: left bottom; rotate: 0.08deg;}
+  20% {transform-origin: left bottom; rotate: 0.08deg;}
+  30% {transform-origin: left bottom; rotate: 0.1deg;}
+  40% {transform-origin: left bottom; rotate: 0.15deg;}
+  50% {transform-origin: left bottom; rotate: 0.25deg;}
+  60% {transform-origin: left bottom; rotate: 0.15deg;}
+  70% {transform-origin: left bottom; rotate: 0.1deg;}
+  80% {transform-origin: left bottom; rotate: 0.08deg;}
+  90% {transform-origin: left bottom; rotate: 0.08deg;}
+  100% {transform-origin: left bottom; rotate: 0deg;}}
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//
 .fleche {
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    animation: flecheMove 5s infinite;
-}
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  animation: flecheMove 5s infinite;}
 @keyframes flecheMove {
-    from {opacity: 1;}
-    to  {opacity: 0;}
-}
+  from { opacity: 1; }
+  to { opacity: 0; }}
+//-----------------------------------------------------------------//
+//-----------------------------------------------------------------//
