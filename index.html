@@ -18,21 +18,56 @@
                 <p>TONY BASSIERE</p>
             </div>
             <nav>
-                <a href="jump-start.html" type="submit">Contact</a>     
+                <a href="mailto:dev88.tony@gmail.com" type="submit">Contact</a>
             </nav>
         </div>
     </header>
     <main>
-        <div class="web">
+        <section>
+            <div class="section">
                 <h1>Portfolio</h1>
-                <p>Développeur Web maîtrisant parfaitement les langages de programmation pour la création de site web moderne, performant
-                   et intuitif.
+                <p>
+                    Développeur Web maîtrisant parfaitement les langages de programmation pour la création de site web
+                    éco-responsable,
+                    moderne, performant et intuitif.
                 </p>
-        </div>
+            </div>
+            <div class="fleche">
+                <img width="50" src="Images/Icons/icons8-vers-le-bas-100.png"
+                    alt="image de fleur pour l'écoresponsabilité">
+            </div>
+            <div class="ecofleur" id="top">
+                <div class="eco">
+                    <img src="Images/eco.png" alt="image de fleur pour l'écoresponsabilité">
+                </div>     
+            </div>
+            <div class="CV">
+                <a href="https://www.linkedin.com/in/tony-bassiere-6b5b9b1a8/" target="_blank"><img
+                        src="Images/Icons/icons8-télécharger-100.png" alt="icon de téléchargement de CV"></a>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="CV">
+            <a href="https://www.linkedin.com/in/tony-bassiere-6b5b9b1a8/" target="_blank"><img
+                    src="Images/Icons/icons8-télécharger-100.png" alt="icon de téléchargement de CV"></a>
+        </div>
     </footer>
+
+    <script type="text/javascript">
+        const fleche = document.querySelector(".fleche");
+
+        window.addEventListener("scroll", checkHeight)
+
+        function checkHeight() {
+            if (document.documentElement.scrollTop > 0) {
+                fleche.style.display = "none";
+            } else {
+                fleche.style.display = "block";
+            }
+        }
+
+    </script>
 </body>
 
 </html>
