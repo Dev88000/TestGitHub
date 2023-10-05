@@ -6,7 +6,7 @@
   font-family: "Signika";
   src: url("../fonts/Signika.woff") format("woff"), url("../fonts/Signika.woff2") format("woff2"), url("../fonts/Signika.ttf") format("truetype");
 }
-.flex-header {
+section, .flex-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,17 +29,21 @@ a {
 html {
   font-size: 62.5%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   background-image: linear-gradient(10deg, #586071, #000000);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   max-width: 90%;
   text-align: center;
+  flex-grow: 1;
 }
 
 a {
@@ -66,27 +70,102 @@ a {
 @keyframes nameMove {
   0% {
     left: 0px;
-    color: rgb(0, 51, 255);
+    color: #3300ff;
   }
   30% {
     left: 50px;
-    color: rgb(0, 51, 255);
+    color: #3300ff;
   }
   50% {
     left: 50px;
     color: #ffffff;
   }
-  60% {
+  70% {
     left: 50px;
     color: #ffffff;
   }
   100% {
     left: 0px;
-    color: rgb(255, 1, 1);
+    color: #ff0000;
   }
 }
-.web {
+.section {
+  width: 50%;
+  margin-top: 25rem;
+}
+
+section {
+  justify-content: space-evenly;
   font: 900 2rem sans-serif;
   color: #ffffff;
-  width: 50%;
+}
+
+.eco {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 25rem;
+  animation: ecoMove 5s infinite;
+}
+
+@keyframes ecoMove {
+  0% {
+    transform-origin: left bottom;
+    rotate: 0deg;
+  }
+  10% {
+    transform-origin: left bottom;
+    rotate: 0.08deg;
+  }
+  20% {
+    transform-origin: left bottom;
+    rotate: 0.08deg;
+  }
+  30% {
+    transform-origin: left bottom;
+    rotate: 0.1deg;
+  }
+  40% {
+    transform-origin: left bottom;
+    rotate: 0.15deg;
+  }
+  50% {
+    transform-origin: left bottom;
+    rotate: 0.25deg;
+  }
+  60% {
+    transform-origin: left bottom;
+    rotate: 0.15deg;
+  }
+  70% {
+    transform-origin: left bottom;
+    rotate: 0.1deg;
+  }
+  80% {
+    transform-origin: left bottom;
+    rotate: 0.08deg;
+  }
+  90% {
+    transform-origin: left bottom;
+    rotate: 0.08deg;
+  }
+  100% {
+    transform-origin: left bottom;
+    rotate: 0deg;
+  }
+}
+.fleche {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  animation: flecheMove 5s infinite;
+}
+
+@keyframes flecheMove {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
